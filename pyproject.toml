@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch-block-replay"
+version = "0.1.0"
+description = "Asynchronous VRAM, RAM, and disk replay buffer for PyTorch"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "LuoShaoyinn"}]
+dependencies = ["torch>=2.0"]
+
+[project.urls]
+Repository = "https://github.com/LuoShaoyinn/torch-block-replay"
+Issues = "https://github.com/LuoShaoyinn/torch-block-replay/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
