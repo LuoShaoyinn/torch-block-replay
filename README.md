@@ -133,11 +133,3 @@ artificially blocked disk refresh, zero rereads while all blocks fit RAM, GPU ch
 replacement/retention/partial chunks, and GPU transfers under
 Genesis-style default CUDA device placement. CUDA/ROCm tests skip if unavailable.
 CIFS throughput must be measured on the deployment machine separately.
-
-## Origin
-
-Extracted from `infra/block_replay` in
-[LuoShaoyinn/srt2](https://github.com/LuoShaoyinn/srt2) at commit `8e7afbcc454e3d392ab6c4db480687c58798ff63`.
-Core behavior is unchanged; one trailing blank line was removed. Tests and the benchmark only change
-their imports to use the standalone package. No training code or simulator
-dependencies are included. No open-source license has been assigned.
